@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fj5-30-Ncr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0Nz-Gq-Mja">
+            <objects>
+                <navigationController id="Fj5-30-Ncr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xqE-mt-LlL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nXP-za-c3O" kind="relationship" relationship="rootViewController" id="DaT-n7-2t7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="op2-Mg-ArB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="128"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="isl-hB-JMj">
+            <objects>
+                <tableViewController id="nXP-za-c3O" customClass="HomeViewController" customModule="DemosPenthera" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vxx-8e-ORQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yjA-Bs-MHD">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yjA-Bs-MHD" id="iuq-8l-ZQk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nXP-za-c3O" id="xAz-Zd-UdQ"/>
+                            <outlet property="delegate" destination="nXP-za-c3O" id="flg-zq-8Od"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AIK-Bk-jfB">
+                        <barButtonItem key="leftBarButtonItem" title="My Downloads" id="nBd-Qj-iCq">
+                            <connections>
+                                <segue destination="qSw-Xz-TL2" kind="show" identifier="showDownloadsController" id="fdB-8d-oai"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="bnC-ug-jTp" kind="show" identifier="showMovie" id="52o-qW-ljn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc3-Y3-CvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="128"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="8oY-Wo-Oek">
+            <objects>
+                <viewController id="bnC-ug-jTp" customClass="MovieDetailViewController" customModule="DemosPenthera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="srg-We-APk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-qX-SUY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lXw-MU-Xr0"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5fx-qX-SUY" firstAttribute="leading" secondItem="lXw-MU-Xr0" secondAttribute="leading" id="0xf-yu-eaC"/>
+                            <constraint firstItem="lXw-MU-Xr0" firstAttribute="trailing" secondItem="5fx-qX-SUY" secondAttribute="trailing" id="6PT-9I-BrF"/>
+                            <constraint firstItem="lXw-MU-Xr0" firstAttribute="bottom" secondItem="5fx-qX-SUY" secondAttribute="bottom" id="G2j-JK-eVO"/>
+                            <constraint firstItem="5fx-qX-SUY" firstAttribute="top" secondItem="lXw-MU-Xr0" secondAttribute="top" id="lvu-f0-CYY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kdq-j1-YnH"/>
+                    <connections>
+                        <outlet property="containerStackView" destination="5fx-qX-SUY" id="QS5-Bh-2LW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyC-0c-FS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282.608695652174" y="127.90178571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6L2-aM-PjY">
+            <objects>
+                <viewController id="mpj-zF-bbt" customClass="ViewController" customModule="DemosPenthera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUb-ym-PL0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="To9-Zt-yie">
+                                <rect key="frame" x="20" y="356.5" width="374" height="183.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s7H-6H-ud2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia4-qE-89J">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                <color key="backgroundColor" red="0.18142967469999999" green="0.49229217720000001" blue="0.58252782879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Download">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="downloadBtnClicked:" destination="mpj-zF-bbt" eventType="touchUpInside" id="zDL-pq-jWm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eP-Yu-TPB">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="80"/>
+                                                <color key="backgroundColor" red="0.18142967469999999" green="0.49229217720000001" blue="0.58252782879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Play">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playBtnClicked:" destination="mpj-zF-bbt" eventType="touchUpInside" id="ANc-ya-tSW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTS-sB-58R">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="80"/>
+                                                <color key="backgroundColor" red="0.18142967469999999" green="0.49229217720000001" blue="0.58252782879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="deleteBtnClicked:" destination="mpj-zF-bbt" eventType="touchUpInside" id="sX3-yr-ffS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1RG-s9-mv3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ezf-4a-BPr">
+                                        <rect key="frame" x="0.0" y="119" width="374" height="4"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sch-lj-UXc">
+                                        <rect key="frame" x="0.0" y="162" width="374" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqi-0U-Qwf"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="To9-Zt-yie" firstAttribute="centerX" secondItem="UUb-ym-PL0" secondAttribute="centerX" id="2Qp-Zv-gFb"/>
+                            <constraint firstItem="To9-Zt-yie" firstAttribute="centerY" secondItem="UUb-ym-PL0" secondAttribute="centerY" id="EY4-fS-g06"/>
+                            <constraint firstItem="eqi-0U-Qwf" firstAttribute="trailing" secondItem="To9-Zt-yie" secondAttribute="trailing" constant="20" id="bd4-kR-dWz"/>
+                            <constraint firstItem="To9-Zt-yie" firstAttribute="leading" secondItem="eqi-0U-Qwf" secondAttribute="leading" constant="20" id="uRh-LE-9p3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nIm-Tu-X8o"/>
+                    <connections>
+                        <outlet property="deleteBtn" destination="aTS-sB-58R" id="xH0-ra-JWr"/>
+                        <outlet property="downloadBtn" destination="Ia4-qE-89J" id="MAa-ar-CRY"/>
+                        <outlet property="playBtn" destination="6eP-Yu-TPB" id="aBS-bK-HPF"/>
+                        <outlet property="statusLabel" destination="sch-lj-UXc" id="VYl-A6-C3i"/>
+                        <outlet property="statusProgressBar" destination="Ezf-4a-BPr" id="VOf-nj-CeQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLo-6R-9YA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="-593"/>
+        </scene>
+        <!--DownloadsController-->
+        <scene sceneID="07i-8R-ev4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MisDescargas" referencedIdentifier="DownloadsController" id="qSw-Xz-TL2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vQG-nF-TgL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fs-Pe-34Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="-335"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

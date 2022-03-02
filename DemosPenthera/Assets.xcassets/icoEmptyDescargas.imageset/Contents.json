@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "minion_iOS.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

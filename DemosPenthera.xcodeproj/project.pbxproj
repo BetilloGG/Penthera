@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D079CCF27A8739100EECA3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D079CCE27A8739100EECA3C /* AppDelegate.swift */; };
+		1D079CD127A8739100EECA3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D079CD027A8739100EECA3C /* SceneDelegate.swift */; };
+		1D079CD327A8739100EECA3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D079CD227A8739100EECA3C /* ViewController.swift */; };
+		1D079CD627A8739100EECA3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D079CD427A8739100EECA3C /* Main.storyboard */; };
+		1D079CD827A8739600EECA3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D079CD727A8739600EECA3C /* Assets.xcassets */; };
+		1D079CDB27A8739600EECA3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D079CD927A8739600EECA3C /* LaunchScreen.storyboard */; };
+		1D079CE327A873A800EECA3C /* VirtuosoClientDownloadEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D079CE227A873A800EECA3C /* VirtuosoClientDownloadEngine.xcframework */; };
+		1D079CE727A873C100EECA3C /* CastDrmSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D079CE527A873C100EECA3C /* CastDrmSetup.swift */; };
+		1D079CE827A873C100EECA3C /* CastDrmConfigDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D079CE627A873C100EECA3C /* CastDrmConfigDelegate.swift */; };
+		1D079CF127A875B900EECA3C /* VirtuosoClientDownloadEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D079CE227A873A800EECA3C /* VirtuosoClientDownloadEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D079CF427A8778400EECA3C /* DemoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D079CF327A8778400EECA3C /* DemoPlayerViewController.swift */; };
+		1D1CE28727C8D4A500E25663 /* DownloadsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1CE28627C8D4A500E25663 /* DownloadsController.swift */; };
+		1D1CE28927C8D4B800E25663 /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1CE28827C8D4B800E25663 /* DownloadCell.swift */; };
+		1D1CE28C27C8D4FD00E25663 /* MisDescargas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1CE28B27C8D4FD00E25663 /* MisDescargas.storyboard */; };
+		1D8A19BE27C69FC600980B76 /* MovieInfoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A19BC27C69FC600980B76 /* MovieInfoCellTableViewCell.swift */; };
+		1D8A19BF27C69FC600980B76 /* MovieInfoCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8A19BD27C69FC600980B76 /* MovieInfoCellTableViewCell.xib */; };
+		1D8A19C427C6A0C800980B76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A19C327C6A0C800980B76 /* HomeViewController.swift */; };
+		1D8A19C627C6A7E700980B76 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A19C527C6A7E600980B76 /* MovieDetailViewController.swift */; };
+		1D8A19C927C6A8A300980B76 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A19C827C6A8A300980B76 /* Movie.swift */; };
+		1D8A19D227C6C20D00980B76 /* PurchasedMovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A19D027C6C20D00980B76 /* PurchasedMovieDetailView.swift */; };
+		1D8A19D427C6C26D00980B76 /* PurchasedMovieDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8A19D327C6C26D00980B76 /* PurchasedMovieDetailView.xib */; };
+		1D8A19D627C6C52500980B76 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A19D527C6C52500980B76 /* UIColorExtension.swift */; };
+		1DEF08B027C7EBA700B431E7 /* DownloadPentheraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF08AF27C7EBA700B431E7 /* DownloadPentheraManager.swift */; };
+		1DEF08B427C7EF1800B431E7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF08B327C7EF1800B431E7 /* Reachability.swift */; };
+		1DEF08B927C8491600B431E7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF08B827C8491600B431E7 /* Utils.swift */; };
+		1DEF08BB27C84A0300B431E7 /* DiskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF08BA27C84A0300B431E7 /* DiskStatus.swift */; };
+		1DEF08BD27C84F9900B431E7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF08BC27C84F9900B431E7 /* Extensions.swift */; };
+		D3CF4BC67AA44E8CA9A2BB72 /* Pods_DemosPenthera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9560CC36F863D561F900E88 /* Pods_DemosPenthera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D079CEF27A8759500EECA3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D079CF127A875B900EECA3C /* VirtuosoClientDownloadEngine.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12B1255AAC22895913A637D8 /* Pods-DemosPenthera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemosPenthera.debug.xcconfig"; path = "Target Support Files/Pods-DemosPenthera/Pods-DemosPenthera.debug.xcconfig"; sourceTree = "<group>"; };
+		1D079CCB27A8739100EECA3C /* DemosPenthera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemosPenthera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D079CCE27A8739100EECA3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D079CD027A8739100EECA3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D079CD227A8739100EECA3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D079CD527A8739100EECA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D079CD727A8739600EECA3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D079CDA27A8739600EECA3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D079CDC27A8739600EECA3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D079CE227A873A800EECA3C /* VirtuosoClientDownloadEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VirtuosoClientDownloadEngine.xcframework; sourceTree = "<group>"; };
+		1D079CE527A873C100EECA3C /* CastDrmSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastDrmSetup.swift; sourceTree = "<group>"; };
+		1D079CE627A873C100EECA3C /* CastDrmConfigDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastDrmConfigDelegate.swift; sourceTree = "<group>"; };
+		1D079CEC27A8752900EECA3C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1D079CF327A8778400EECA3C /* DemoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPlayerViewController.swift; sourceTree = "<group>"; };
+		1D1CE28627C8D4A500E25663 /* DownloadsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsController.swift; sourceTree = "<group>"; };
+		1D1CE28827C8D4B800E25663 /* DownloadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadCell.swift; sourceTree = "<group>"; };
+		1D1CE28B27C8D4FD00E25663 /* MisDescargas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MisDescargas.storyboard; sourceTree = "<group>"; };
+		1D8A19BC27C69FC600980B76 /* MovieInfoCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoCellTableViewCell.swift; sourceTree = "<group>"; };
+		1D8A19BD27C69FC600980B76 /* MovieInfoCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieInfoCellTableViewCell.xib; sourceTree = "<group>"; };
+		1D8A19C327C6A0C800980B76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1D8A19C527C6A7E600980B76 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		1D8A19C827C6A8A300980B76 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1D8A19D027C6C20D00980B76 /* PurchasedMovieDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchasedMovieDetailView.swift; sourceTree = "<group>"; };
+		1D8A19D327C6C26D00980B76 /* PurchasedMovieDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchasedMovieDetailView.xib; sourceTree = "<group>"; };
+		1D8A19D527C6C52500980B76 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		1DEF08AF27C7EBA700B431E7 /* DownloadPentheraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadPentheraManager.swift; sourceTree = "<group>"; };
+		1DEF08B227C7EF1800B431E7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1DEF08B327C7EF1800B431E7 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1DEF08B827C8491600B431E7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1DEF08BA27C84A0300B431E7 /* DiskStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStatus.swift; sourceTree = "<group>"; };
+		1DEF08BC27C84F9900B431E7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		94BC77C18044F53C745D8B9D /* Pods-DemosPenthera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemosPenthera.release.xcconfig"; path = "Target Support Files/Pods-DemosPenthera/Pods-DemosPenthera.release.xcconfig"; sourceTree = "<group>"; };
+		D9560CC36F863D561F900E88 /* Pods_DemosPenthera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemosPenthera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D079CC827A8739100EECA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D079CE327A873A800EECA3C /* VirtuosoClientDownloadEngine.xcframework in Frameworks */,
+				D3CF4BC67AA44E8CA9A2BB72 /* Pods_DemosPenthera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D079CC227A8739100EECA3C = {
+			isa = PBXGroup;
+			children = (
+				1D8A19BA27C69EB300980B76 /* KLIC */,
+				1D079CEC27A8752900EECA3C /* Bridging-Header.h */,
+				1D079CCD27A8739100EECA3C /* DemosPenthera */,
+				1D079CCC27A8739100EECA3C /* Products */,
+				718724875CD9C1F9A3FE4BE0 /* Pods */,
+				E80B563450C2D85E69DF6F16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D079CCC27A8739100EECA3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D079CCB27A8739100EECA3C /* DemosPenthera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D079CCD27A8739100EECA3C /* DemosPenthera */ = {
+			isa = PBXGroup;
+			children = (
+				1D079CE227A873A800EECA3C /* VirtuosoClientDownloadEngine.xcframework */,
+				1D079CE427A873B500EECA3C /* DRM */,
+				1D079CCE27A8739100EECA3C /* AppDelegate.swift */,
+				1D079CF327A8778400EECA3C /* DemoPlayerViewController.swift */,
+				1D079CD027A8739100EECA3C /* SceneDelegate.swift */,
+				1D079CD227A8739100EECA3C /* ViewController.swift */,
+				1D079CD427A8739100EECA3C /* Main.storyboard */,
+				1D079CD727A8739600EECA3C /* Assets.xcassets */,
+				1D079CD927A8739600EECA3C /* LaunchScreen.storyboard */,
+				1D079CDC27A8739600EECA3C /* Info.plist */,
+			);
+			path = DemosPenthera;
+			sourceTree = "<group>";
+		};
+		1D079CE427A873B500EECA3C /* DRM */ = {
+			isa = PBXGroup;
+			children = (
+				1D079CE627A873C100EECA3C /* CastDrmConfigDelegate.swift */,
+				1D079CE527A873C100EECA3C /* CastDrmSetup.swift */,
+			);
+			path = DRM;
+			sourceTree = "<group>";
+		};
+		1D1CE28A27C8D4F300E25663 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				1D1CE28B27C8D4FD00E25663 /* MisDescargas.storyboard */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		1D8A19BA27C69EB300980B76 /* KLIC */ = {
+			isa = PBXGroup;
+			children = (
+				1D1CE28A27C8D4F300E25663 /* Download */,
+				1DEF08B727C8490900B431E7 /* Utils */,
+				1DEF08B127C7EEE700B431E7 /* ReachabilitySwift */,
+				1DEF08AB27C7EB2100B431E7 /* PentheraManager */,
+				1D8A19CA27C6BC6B00980B76 /* View */,
+				1D8A19C727C6A88800980B76 /* Model */,
+				1D8A19BB27C69FA100980B76 /* AddItems */,
+				1D8A19C327C6A0C800980B76 /* HomeViewController.swift */,
+				1D1CE28627C8D4A500E25663 /* DownloadsController.swift */,
+				1D8A19C527C6A7E600980B76 /* MovieDetailViewController.swift */,
+			);
+			path = KLIC;
+			sourceTree = "<group>";
+		};
+		1D8A19BB27C69FA100980B76 /* AddItems */ = {
+			isa = PBXGroup;
+			children = (
+				1D8A19BC27C69FC600980B76 /* MovieInfoCellTableViewCell.swift */,
+				1D8A19BD27C69FC600980B76 /* MovieInfoCellTableViewCell.xib */,
+			);
+			path = AddItems;
+			sourceTree = "<group>";
+		};
+		1D8A19C727C6A88800980B76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D8A19C827C6A8A300980B76 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D8A19CA27C6BC6B00980B76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D8A19D327C6C26D00980B76 /* PurchasedMovieDetailView.xib */,
+				1D8A19D027C6C20D00980B76 /* PurchasedMovieDetailView.swift */,
+				1D1CE28827C8D4B800E25663 /* DownloadCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DEF08AB27C7EB2100B431E7 /* PentheraManager */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF08AF27C7EBA700B431E7 /* DownloadPentheraManager.swift */,
+			);
+			path = PentheraManager;
+			sourceTree = "<group>";
+		};
+		1DEF08B127C7EEE700B431E7 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF08B227C7EF1800B431E7 /* Reachability.h */,
+				1DEF08B327C7EF1800B431E7 /* Reachability.swift */,
+			);
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		1DEF08B727C8490900B431E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF08BA27C84A0300B431E7 /* DiskStatus.swift */,
+				1D8A19D527C6C52500980B76 /* UIColorExtension.swift */,
+				1DEF08B827C8491600B431E7 /* Utils.swift */,
+				1DEF08BC27C84F9900B431E7 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		718724875CD9C1F9A3FE4BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12B1255AAC22895913A637D8 /* Pods-DemosPenthera.debug.xcconfig */,
+				94BC77C18044F53C745D8B9D /* Pods-DemosPenthera.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E80B563450C2D85E69DF6F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9560CC36F863D561F900E88 /* Pods_DemosPenthera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D079CCA27A8739100EECA3C /* DemosPenthera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D079CDF27A8739600EECA3C /* Build configuration list for PBXNativeTarget "DemosPenthera" */;
+			buildPhases = (
+				A110D1E267EBD5F6626878E0 /* [CP] Check Pods Manifest.lock */,
+				1D079CC727A8739100EECA3C /* Sources */,
+				1D079CC827A8739100EECA3C /* Frameworks */,
+				1D079CC927A8739100EECA3C /* Resources */,
+				1D079CEF27A8759500EECA3C /* Embed Frameworks */,
+				E13402143745565E6B8BC8CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemosPenthera;
+			productName = DemosPenthera;
+			productReference = 1D079CCB27A8739100EECA3C /* DemosPenthera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D079CC327A8739100EECA3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1D079CCA27A8739100EECA3C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1D079CC627A8739100EECA3C /* Build configuration list for PBXProject "DemosPenthera" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D079CC227A8739100EECA3C;
+			productRefGroup = 1D079CCC27A8739100EECA3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D079CCA27A8739100EECA3C /* DemosPenthera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D079CC927A8739100EECA3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D1CE28C27C8D4FD00E25663 /* MisDescargas.storyboard in Resources */,
+				1D079CDB27A8739600EECA3C /* LaunchScreen.storyboard in Resources */,
+				1D079CD827A8739600EECA3C /* Assets.xcassets in Resources */,
+				1D8A19D427C6C26D00980B76 /* PurchasedMovieDetailView.xib in Resources */,
+				1D8A19BF27C69FC600980B76 /* MovieInfoCellTableViewCell.xib in Resources */,
+				1D079CD627A8739100EECA3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A110D1E267EBD5F6626878E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemosPenthera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13402143745565E6B8BC8CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemosPenthera/Pods-DemosPenthera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemosPenthera/Pods-DemosPenthera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemosPenthera/Pods-DemosPenthera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D079CC727A8739100EECA3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DEF08B427C7EF1800B431E7 /* Reachability.swift in Sources */,
+				1D079CF427A8778400EECA3C /* DemoPlayerViewController.swift in Sources */,
+				1D079CE727A873C100EECA3C /* CastDrmSetup.swift in Sources */,
+				1D1CE28727C8D4A500E25663 /* DownloadsController.swift in Sources */,
+				1D8A19BE27C69FC600980B76 /* MovieInfoCellTableViewCell.swift in Sources */,
+				1D8A19C427C6A0C800980B76 /* HomeViewController.swift in Sources */,
+				1DEF08B927C8491600B431E7 /* Utils.swift in Sources */,
+				1D8A19C927C6A8A300980B76 /* Movie.swift in Sources */,
+				1D1CE28927C8D4B800E25663 /* DownloadCell.swift in Sources */,
+				1D079CD327A8739100EECA3C /* ViewController.swift in Sources */,
+				1D8A19D227C6C20D00980B76 /* PurchasedMovieDetailView.swift in Sources */,
+				1D079CCF27A8739100EECA3C /* AppDelegate.swift in Sources */,
+				1DEF08BB27C84A0300B431E7 /* DiskStatus.swift in Sources */,
+				1D079CD127A8739100EECA3C /* SceneDelegate.swift in Sources */,
+				1D8A19C627C6A7E700980B76 /* MovieDetailViewController.swift in Sources */,
+				1D079CE827A873C100EECA3C /* CastDrmConfigDelegate.swift in Sources */,
+				1DEF08BD27C84F9900B431E7 /* Extensions.swift in Sources */,
+				1DEF08B027C7EBA700B431E7 /* DownloadPentheraManager.swift in Sources */,
+				1D8A19D627C6C52500980B76 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D079CD427A8739100EECA3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D079CD527A8739100EECA3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D079CD927A8739600EECA3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D079CDA27A8739600EECA3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D079CDD27A8739600EECA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D079CDE27A8739600EECA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D079CE027A8739600EECA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B1255AAC22895913A637D8 /* Pods-DemosPenthera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SA85XR89U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemosPenthera/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cinepolisklic.viewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Klic iOS Dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D079CE127A8739600EECA3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94BC77C18044F53C745D8B9D /* Pods-DemosPenthera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4SA85XR89U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemosPenthera/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cinepolisklic.viewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Klic iOS Dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D079CC627A8739100EECA3C /* Build configuration list for PBXProject "DemosPenthera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D079CDD27A8739600EECA3C /* Debug */,
+				1D079CDE27A8739600EECA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D079CDF27A8739600EECA3C /* Build configuration list for PBXNativeTarget "DemosPenthera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D079CE027A8739600EECA3C /* Debug */,
+				1D079CE127A8739600EECA3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D079CC327A8739100EECA3C /* Project object */;
+}
